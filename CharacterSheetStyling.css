@@ -58,3 +58,28 @@ textarea {
 textarea {
     height: 100px;
 }
+.abilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ability {
+    flex: 1 1 30%; /* Each ability takes up about a third of the width */
+    margin-bottom: 15px;
+}
+
+.ability label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.ability input[type="number"] {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
