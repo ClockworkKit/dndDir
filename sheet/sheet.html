@@ -1,77 +1,74 @@
 <form>
-
-<div class="character-sheet">
+    <div class="character-sheet">
         <!-- Character Info Section -->
         <div class="section character-info">
             <h2>Character Information</h2>
             <label>Character Name:</label>
-            <input type="text" name="attr_character_name">
+            <div name="attr_character_name" contenteditable="true"></div>
 
             <label>Class:</label>
-            <input type="text" name="attr_class">
+            <div name="attr_class" contenteditable="true"></div>
 
             <label>Race:</label>
-            <input type="text" name="attr_race">
+            <div name="attr_race" contenteditable="true"></div>
 
             <label>Alignment:</label>
-            <input type="text" name="attr_alignment">
+            <div name="attr_alignment" contenteditable="true"></div>
 
             <label>Level:</label>
-            <input type="number" name="attr_level">
+            <div name="attr_level" contenteditable="true"></div>
         </div>
 
         <!-- Abilities Section -->
         <div class="section abilities">
             <h2>Abilities</h2>
-         
-    <!-- Strength -->
-    <div class="ability">
-        <label>Strength</label>
-        <input type="number" name="attr_strength" placeholder="Base Score">
-        <input type="number" name="attr_strength_modifier" placeholder="Modifier" readonly>
-        <input type="number" name="attr_strength_temp" placeholder="Temp Adjust">
-    </div>
+            <!-- Strength -->
+            <div class="ability">
+                <label>Strength</label>
+                <div name="attr_strength" contenteditable="true" placeholder="Base Score"></div>
+                <div name="attr_strength_modifier" contenteditable="false" readonly></div>
+                <div name="attr_strength_temp" contenteditable="true" placeholder="Temp Adjust"></div>
+            </div>
 
-    <!-- Repeat similar structure for other abilities -->
-    <!-- Dexterity -->
-    <div class="ability">
-        <label>Dexterity</label>
-        <input type="number" name="attr_dexterity" placeholder="Base Score">
-        <input type="number" name="attr_dexterity_modifier" placeholder="Modifier" readonly>
-        <input type="number" name="attr_dexterity_temp" placeholder="Temp Adjust">
-    </div>
-    
-    <div class="ability">
-        <label>Constitution</label>
-        <input type="number" name="attr_constitution" placeholder="Base Score">
-        <input type="number" name="attr_constitution_modifier" placeholder="Modifier" readonly>
-        <input type="number" name="attr_constitution_temp" placeholder="Temp Adjust">
-    </div>
-    
-    <div class="ability">
-        <label>Intelligence</label>
-        <input type="number" name="attr_intelligence" placeholder="Base Score">
-        <input type="number" name="attr_intelligence_modifier" placeholder="Modifier" readonly>
-        <input type="number" name="attr_intelligence_temp" placeholder="Temp Adjust">
-    </div>
-    
-    <div class="ability">
-        <label>Wisdom</label>
-        <input type="number" name="attr_wisdom" placeholder="Base Score">
-        <input type="number" name="attr_wisdom_modifier" placeholder="Modifier" readonly>
-        <input type="number" name="attr_wisdom_temp" placeholder="Temp Adjust">
-    </div>
-    
-    <div class="ability">
-        <label>Charisma</label>
-        <input type="number" name="attr_charisma" placeholder="Base Score">
-        <input type="number" name="attr_charisma_modifier" placeholder="Modifier" readonly>
-        <input type="number" name="attr_charisma_temp" placeholder="Temp Adjust">
-    </div>
-    
-    <!-- Add Constitution, Intelligence, Wisdom, Charisma following the same pattern -->
-</div>
+            <!-- Dexterity -->
+            <div class="ability">
+                <label>Dexterity</label>
+                <div name="attr_dexterity" contenteditable="true" placeholder="Base Score"></div>
+                <div name="attr_dexterity_modifier" contenteditable="false" readonly></div>
+                <div name="attr_dexterity_temp" contenteditable="true" placeholder="Temp Adjust"></div>
+            </div>
 
+            <!-- Constitution -->
+            <div class="ability">
+                <label>Constitution</label>
+                <div name="attr_constitution" contenteditable="true" placeholder="Base Score"></div>
+                <div name="attr_constitution_modifier" contenteditable="false" readonly></div>
+                <div name="attr_constitution_temp" contenteditable="true" placeholder="Temp Adjust"></div>
+            </div>
+
+            <!-- Intelligence -->
+            <div class="ability">
+                <label>Intelligence</label>
+                <div name="attr_intelligence" contenteditable="true" placeholder="Base Score"></div>
+                <div name="attr_intelligence_modifier" contenteditable="false" readonly></div>
+                <div name="attr_intelligence_temp" contenteditable="true" placeholder="Temp Adjust"></div>
+            </div>
+
+            <!-- Wisdom -->
+            <div class="ability">
+                <label>Wisdom</label>
+                <div name="attr_wisdom" contenteditable="true" placeholder="Base Score"></div>
+                <div name="attr_wisdom_modifier" contenteditable="false" readonly></div>
+                <div name="attr_wisdom_temp" contenteditable="true" placeholder="Temp Adjust"></div>
+            </div>
+
+            <!-- Charisma -->
+            <div class="ability">
+                <label>Charisma</label>
+                <div name="attr_charisma" contenteditable="true" placeholder="Base Score"></div>
+                <div name="attr_charisma_modifier" contenteditable="false" readonly></div>
+                <div name="attr_charisma_temp" contenteditable="true" placeholder="Temp Adjust"></div>
+            </div>
         </div>
 
         <!-- Skills Section -->
@@ -79,10 +76,10 @@
             <h2>Skills</h2>
             <div class="scrollable-skills">
                 <label>Appraise</label>
-                <input type="number" name="attr_appraise">
+                <div name="attr_appraise" contenteditable="true"></div>
 
                 <label>Balance</label>
-                <input type="number" name="attr_balance">
+                <div name="attr_balance" contenteditable="true"></div>
                 
                 <!-- Add more skills following this structure -->
             </div>
@@ -92,10 +89,10 @@
         <div class="section attacks-spells">
             <h2>Attacks & Spells</h2>
             <label>Attack Name:</label>
-            <input type="text" name="attr_attack_name">
+            <div name="attr_attack_name" contenteditable="true"></div>
 
             <label>Attack Bonus:</label>
-            <input type="number" name="attr_attack_bonus">
+            <div name="attr_attack_bonus" contenteditable="true"></div>
 
             <!-- Add more attack fields as needed -->
         </div>
@@ -104,19 +101,19 @@
         <div class="section hp-ac">
             <h2>Hit Points & Armor Class</h2>
             <label>HP:</label>
-            <input type="number" name="attr_hp">
+            <div name="attr_hp" contenteditable="true"></div>
 
             <label>AC:</label>
-            <input type="number" name="attr_ac">
+            <div name="attr_ac" contenteditable="true"></div>
 
             <label>Initiative:</label>
-            <input type="number" name="attr_initiative">
+            <div name="attr_initiative" contenteditable="true"></div>
         </div>
 
         <!-- Equipment Section -->
         <div class="section equipment">
             <h2>Equipment</h2>
-            <textarea name="attr_equipment"></textarea>
+            <div name="attr_equipment" contenteditable="true"></div>
         </div>
     </div>
 </form>
