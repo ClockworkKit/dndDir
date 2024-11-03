@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D&D 3.5e Character Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="character-sheet">
+        <!-- Character Info Section -->
+        <div class="section character-info">
+            <h2>Character Information</h2>
+            <label>Character Name:</label>
+            <input type="text" name="attr_character_name">
+
+            <label>Class:</label>
+            <input type="text" name="attr_class">
+
+            <label>Race:</label>
+            <input type="text" name="attr_race">
+
+            <label>Alignment:</label>
+            <input type="text" name="attr_alignment">
+
+            <label>Level:</label>
+            <input type="number" name="attr_level">
+        </div>
+
+        <!-- Abilities Section -->
+        <div class="section abilities">
+            <h2>Abilities</h2>
+            <!-- Repeat this structure for each ability (Strength, Dexterity, etc.) -->
+            <label>Strength</label>
+            <input type="number" name="attr_strength">
+            <input type="number" name="attr_strength_modifier" readonly placeholder="Modifier">
+            
+            <label>Dexterity</label>
+            <input type="number" name="attr_dexterity">
+            <input type="number" name="attr_dexterity_modifier" readonly placeholder="Modifier">
+            
+            <!-- Other abilities would go here -->
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section skills">
+            <h2>Skills</h2>
+            <div class="scrollable-skills">
+                <label>Appraise</label>
+                <input type="number" name="attr_appraise">
+
+                <label>Balance</label>
+                <input type="number" name="attr_balance">
+                
+                <!-- Add more skills following this structure -->
+            </div>
+        </div>
+
+        <!-- Attacks & Spells Section -->
+        <div class="section attacks-spells">
+            <h2>Attacks & Spells</h2>
+            <label>Attack Name:</label>
+            <input type="text" name="attr_attack_name">
+
+            <label>Attack Bonus:</label>
+            <input type="number" name="attr_attack_bonus">
+
+            <!-- Add more attack fields as needed -->
+        </div>
+
+        <!-- Hit Points & Armor Class Section -->
+        <div class="section hp-ac">
+            <h2>Hit Points & Armor Class</h2>
+            <label>HP:</label>
+            <input type="number" name="attr_hp">
+
+            <label>AC:</label>
+            <input type="number" name="attr_ac">
+
+            <label>Initiative:</label>
+            <input type="number" name="attr_initiative">
+        </div>
+
+        <!-- Equipment Section -->
+        <div class="section equipment">
+            <h2>Equipment</h2>
+            <textarea name="attr_equipment"></textarea>
+        </div>
+    </div>
+</body>
+</html>
