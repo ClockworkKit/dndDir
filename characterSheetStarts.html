@@ -28,16 +28,55 @@
         <!-- Abilities Section -->
         <div class="section abilities">
             <h2>Abilities</h2>
-            <!-- Repeat this structure for each ability (Strength, Dexterity, etc.) -->
-            <label>Strength</label>
-            <input type="number" name="attr_strength">
-            <input type="number" name="attr_strength_modifier" readonly placeholder="Modifier">
-            
-            <label>Dexterity</label>
-            <input type="number" name="attr_dexterity">
-            <input type="number" name="attr_dexterity_modifier" readonly placeholder="Modifier">
-            
-            <!-- Other abilities would go here -->
+         
+    <!-- Strength -->
+    <div class="ability">
+        <label>Strength</label>
+        <input type="number" name="attr_strength" placeholder="Base Score">
+        <input type="number" name="attr_strength_modifier" placeholder="Modifier" readonly>
+        <input type="number" name="attr_strength_temp" placeholder="Temp Adjust">
+    </div>
+
+    <!-- Repeat similar structure for other abilities -->
+    <!-- Dexterity -->
+    <div class="ability">
+        <label>Dexterity</label>
+        <input type="number" name="attr_dexterity" placeholder="Base Score">
+        <input type="number" name="attr_dexterity_modifier" placeholder="Modifier" readonly>
+        <input type="number" name="attr_dexterity_temp" placeholder="Temp Adjust">
+    </div>
+    
+    <div class="ability">
+        <label>Constitution</label>
+        <input type="number" name="attr_constitution" placeholder="Base Score">
+        <input type="number" name="attr_constitution_modifier" placeholder="Modifier" readonly>
+        <input type="number" name="attr_constitution_temp" placeholder="Temp Adjust">
+    </div>
+    
+    <div class="ability">
+        <label>Intelligence</label>
+        <input type="number" name="attr_intelligence" placeholder="Base Score">
+        <input type="number" name="attr_intelligence_modifier" placeholder="Modifier" readonly>
+        <input type="number" name="attr_intelligence_temp" placeholder="Temp Adjust">
+    </div>
+    
+    <div class="ability">
+        <label>Wisdom</label>
+        <input type="number" name="attr_wisdom" placeholder="Base Score">
+        <input type="number" name="attr_wisdom_modifier" placeholder="Modifier" readonly>
+        <input type="number" name="attr_wisdom_temp" placeholder="Temp Adjust">
+    </div>
+    
+    <div class="ability">
+        <label>Charisma</label>
+        <input type="number" name="attr_charisma" placeholder="Base Score">
+        <input type="number" name="attr_charisma_modifier" placeholder="Modifier" readonly>
+        <input type="number" name="attr_charisma_temp" placeholder="Temp Adjust">
+    </div>
+    
+    <!-- Add Constitution, Intelligence, Wisdom, Charisma following the same pattern -->
+</div>
+
         </div>
 
         <!-- Skills Section -->
