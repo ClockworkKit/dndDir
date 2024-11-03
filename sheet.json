@@ -1,0 +1,13 @@
+{
+    "html": "sheet.html",
+    "css": "sheet.css",
+    "authors": "Your Name or Team Name",
+    "roll20userid": "12345678",
+    "preview": "preview.png",
+    "instructions": "README.md",
+    "legacy": false,
+    "translations": ["translation.json"],
+    "compatibility": ["dnd3.5e"],
+    "displayname": "D&D 3.5e Custom Sheet",
+    "description": "A custom character sheet for D&D 3.5e, compatible with all classes and abilities."
+}
